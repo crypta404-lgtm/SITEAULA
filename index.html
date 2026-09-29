@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#253c47">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080808">
 <meta name="description" content="ALT/ITUDE — Equipamento independente para movimento, montanha e tudo entre os dois. Coleção experimental 001.">
 <title>ALT/ITUDE — Equipment for higher ground</title>
 <link rel="preconnect" href="https://images.unsplash.com"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,37 @@
 @media(max-width:1000px){.header nav{gap:14px}.header nav a{font-size:9px}.tools{gap:7px}.collection{grid-template-columns:1fr 1fr}.feature{grid-row:span 2}.collection>.product-card .product-photo{height:250px}.collection>.product-card:nth-child(3){display:none}.feature{grid-row:auto;min-height:360px}.catalog-grid{grid-template-columns:repeat(2,1fr)}.hero-title{font-size:16vw}.hero-bottom{grid-template-columns:1.4fr 1fr}.footer-top{gap:25px}.gallery-main{height:390px}.detail-copy{padding:24px}}
 @media(max-width:700px){.announcement{justify-content:center;font-size:8px}.announcement span:last-child{display:none}.header{height:65px;padding:0 5%}.logo{font-size:27px}.header nav{display:none}.header nav.open{display:flex;position:absolute;top:65px;left:0;right:0;background:var(--paper);color:var(--ink);flex-wrap:wrap;padding:24px;gap:25px;border-bottom:1px solid var(--line)}.mobile-menu{display:block}.tools{gap:3px}.tools button{padding:6px}.hero{height:calc(90svh - 28px);min-height:660px}.hero-content{padding:115px 5% 28px}.hero-top .mono{font-size:8px}.hero-title{font-size:22vw;line-height:.84;margin:80px 0 25px}.hero-bottom{grid-template-columns:1fr}.hero-bottom p{font-size:12px;max-width:250px;margin-bottom:20px}.hero-data{display:none}.hero-index{right:5%;top:46%;font-size:8px}.category-nav{display:flex;overflow-x:auto}.category-nav a{min-width:108px;padding:20px 12px;font-size:20px;gap:12px}.section{padding:55px 5%}.section-heading{align-items:end;gap:15px;margin-bottom:25px}.section-heading h2{font-size:50px}.section-heading .text-link{font-size:8px}.collection{grid-template-columns:1fr 1fr;gap:12px}.feature{grid-column:1/-1;min-height:420px}.collection>.product-card:nth-child(3){display:block}.collection>.product-card .product-photo{height:230px}.feature-caption h3{font-size:58px}.product-info{grid-template-columns:1fr;gap:5px;padding:14px 0}.product-info .price{grid-row:3}.product-info h3{font-size:12px}.product-info .meta{font-size:8px}.collection-note{gap:25px}.collection-note p{font-size:11px}.collection-note .mono{font-size:8px}.manifesto{grid-template-columns:1fr;padding:35px 5%;gap:25px}.manifesto h2{font-size:43px}.manifesto .mono{max-width:none}.editorial{height:510px}.editorial-content{padding:30px 5%}.editorial h2{font-size:21vw}.editorial-bottom{gap:30px}.editorial-bottom p{font-size:10px;max-width:160px}.catalog-intro{display:block}.catalog-intro p{margin-top:20px;max-width:100%}.catalog-bar{flex-wrap:wrap;margin-top:22px}.catalog-layout{display:block}.filters{display:none;border-bottom:1px solid var(--line);margin-bottom:25px;grid-template-columns:1fr 1fr;gap:20px}.filters.open{display:grid}.filter-toggle{display:block;font:10px var(--mono)}.catalog-grid{gap:25px 12px}.catalog-grid .product-photo{height:225px}.product-no{left:10px;top:12px;font-size:8px}.product-tag{left:10px;font-size:8px}.quick-add{width:28px;height:28px;right:8px;bottom:10px}.field-notes{grid-template-columns:1fr;padding:35px 5%;gap:23px}.field-notes article{border-right:0;border-bottom:1px solid var(--line);padding:0 0 20px}.field-notes h3{font-size:26px}.footer{padding:45px 5% 20px}.footer-top{grid-template-columns:1fr 1fr;gap:40px 20px}.footer-top>div:first-child{grid-column:1/-1}.footer h2{font-size:48px}.footer-wordmark{font-size:18vw;margin-top:40px}.footer-bottom{font-size:8px;flex-wrap:wrap}.product-detail{grid-template-columns:1fr}.gallery-main{height:400px}.detail-copy h2{font-size:48px}.related-grid{grid-template-columns:1fr 1fr}.related-grid>.product-card:last-child{display:none}.related .product-photo{height:180px}.small-content{padding:24px}.modal-header{padding:13px 20px}.modal{max-height:94svh}.text-link{white-space:normal}.alt-symbol{font-size:50px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.hero>img{transform:none!important}}
+/* Black edition: shared surfaces, controls and editorial imagery. */
+:root{color-scheme:dark;--paper:#080808;--ink:#f0f0ec;--muted:#a5a5a5;--line:#343434;--ice:#202020;--blue:#191919;--accent:#d5e694}
+.announcement,.footer{background:#050505;color:#e8e8e8}
+.header.fixed,.modal,.modal-header{background:#0c0c0c}
+.hero,.feature,.editorial{background:#111}
+.hero>img{filter:grayscale(1) brightness(.64)}
+.hero:after{background:linear-gradient(180deg,#0008,transparent 35%,#000c)}
+.hero-title .outline{color:#d7d7d7}
+.hero-bottom p,.hero-data,.footer small,.footer-links .mono,.footer-bottom{color:#bdbdbd}
+.feature img,.editorial img{filter:grayscale(1) brightness(.72)}
+.feature:after{background:linear-gradient(transparent,#000c)}
+.editorial:after{background:linear-gradient(90deg,#0009,transparent)}
+.manifesto{background:#131313;color:var(--ink);border-block:1px solid var(--line)}
+.manifesto h2 span{color:#9b9b9b}
+.product-photo,.gallery{background:#1b1b1b}
+.product-photo img,.gallery-main img{filter:grayscale(1) brightness(.8)}
+.product-photo:hover img{filter:grayscale(1) brightness(.95)}
+.product-no{background:#101010e8;color:#f0f0ec}
+.product-tag{color:#111}
+.quick-add{background:#ededeb;color:#111}
+.cta,.cta.dark{background:#ededeb;color:#111}
+.cta:hover,.cta.dark:hover{background:var(--accent);color:#111}
+.filter-group label,.detail-description,.small-content p{color:#bcbcbc}
+.filter-group select,.catalog-bar select{color:var(--ink);background:#111}
+.choice-row button{border-color:#646464}
+.choice-row button.selected{background:#ededeb;color:#111}
+.search-input,.account-input{color:var(--ink);background:#141414}
+input::placeholder{color:#aaa}
+.toast{background:#ededeb;color:#111}
+.skip{background:#ededeb;color:#111}
+.swatches i{outline-color:#777}
 </style>
 </head>
 <body>
